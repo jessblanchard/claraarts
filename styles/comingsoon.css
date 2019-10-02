@@ -1,0 +1,488 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+/* Animations */
+
+.logo {
+	animation: fadeInAnimation ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.title, .sign-up-message {
+	animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.subscription{
+  	animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contact-message {
+  	animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* yantramanav-100 - latin */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/yantramanav-v5-latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Yantramanav Thin'), local('Yantramanav-Thin'),
+       url('../fonts/yantramanav-v5-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yantramanav-v5-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yantramanav-v5-latin-100.svg#Yantramanav') format('svg'); /* Legacy iOS */
+}
+/* yantramanav-300 - latin */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/yantramanav-v5-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Yantramanav Light'), local('Yantramanav-Light'),
+       url('../fonts/yantramanav-v5-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yantramanav-v5-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yantramanav-v5-latin-300.svg#Yantramanav') format('svg'); /* Legacy iOS */
+}
+/* yantramanav-regular - latin */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/yantramanav-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Yantramanav Regular'), local('Yantramanav-Regular'),
+       url('../fonts/yantramanav-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yantramanav-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yantramanav-v5-latin-regular.svg#Yantramanav') format('svg'); /* Legacy iOS */
+}
+/* yantramanav-500 - latin */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/yantramanav-v5-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Yantramanav Medium'), local('Yantramanav-Medium'),
+       url('../fonts/yantramanav-v5-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yantramanav-v5-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yantramanav-v5-latin-500.svg#Yantramanav') format('svg'); /* Legacy iOS */
+}
+/* yantramanav-700 - latin */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/yantramanav-v5-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Yantramanav Bold'), local('Yantramanav-Bold'),
+       url('../fonts/yantramanav-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yantramanav-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yantramanav-v5-latin-700.svg#Yantramanav') format('svg'); /* Legacy iOS */
+}
+/* yantramanav-900 - latin */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/yantramanav-v5-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Yantramanav Black'), local('Yantramanav-Black'),
+       url('../fonts/yantramanav-v5-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yantramanav-v5-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yantramanav-v5-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yantramanav-v5-latin-900.svg#Yantramanav') format('svg'); /* Legacy iOS */
+}
+
+h1{
+  font-family: Yantramanav;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 1.15em;
+  text-transform:capitalize;
+  padding-top: 10px;
+  padding-bottom:10px;
+  justify-self: center;
+  align-self: center;
+}
+
+h2{
+  font-family: Yantramanav;
+  font-size: 1em;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 1em;
+  padding-top: 10px;
+  padding-bottom:10px;
+  justify-self: center;
+  align-self: center;
+  font-weight: 300;
+}
+
+
+h3{
+  font-family: Yantramanav;
+  font-size: 1em;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 1em;
+  padding-top: 10px;
+  padding-bottom:10px;
+  justify-self: center;
+  align-self: center;
+}
+
+
+form{
+  margin-left: 10%;
+  margin-right:10%;
+  justify-self: center;
+  /* padding-top: 10px; */
+  padding-bottom:10px;
+  justify-self: center;
+  align-self: center;
+  width:100%;
+}
+
+textarea {
+  resize: none;
+  /* width:300px; */
+  background: #F0F3F2;
+  border: 1px solid #CDCDCD;
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.50);
+  border-radius: 3px;
+  font-family: Yantramanav;
+  font-size: 1em;
+  height: 1.5em;
+  color: #0D5A78;
+  align-self: center;
+}
+
+button{
+  border-radius: 100%;
+  height:50px;
+  width:50px;
+  border: none;
+  background-color:#0D5A78;
+  color:#ffffff;
+
+}
+
+a{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bgimg {
+  background-image: url('../images/abstract-painting-art-artistic-1255372.jpeg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em; */
+  display:grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(8, 1fr)
+}
+
+.logo{
+  width:40%;
+  margin:10px;
+  /* padding:30px; */
+  grid-column: 2/span 2;
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+
+.title{
+  grid-column: 1/span 4;
+  margin-left: 10%;
+  margin-right:10%;
+  grid-row: 4;
+  justify-self: left;
+}
+
+.sign-up-message{
+  grid-column: 1/span 4;
+  margin-left: 10%;
+  margin-right:10%;
+  grid-row: 5;
+  justify-self: center;
+}
+
+.contact-message{
+  grid-column: 1/span 4;
+  margin-left: 10%;
+  margin-right:10%;
+  grid-row: 7;
+  justify-self: center;
+}
+
+.subscription{
+  grid-column: 1/span 4;
+  grid-row: 6;
+  display:grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+
+.formtitle{
+  grid-column: 1/span 1;
+  grid-row: 1;
+  justify-self:left;
+  font-family: Yantramanav;
+  font-size: 1em;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: left;
+  font-weight: 200;
+
+}
+
+.emailsubmission{
+  display:grid;
+  grid-gap: 0px;
+  grid-template-columns: auto 80px 50px;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.submission-box{
+  grid-column: 1/span 3;
+  grid-row: 1;
+  margin-bottom:5px;
+}
+
+.subscribe-button-text{
+  grid-column: 2/span 1;
+  grid-row: 2;
+  font-family: Yantramanav;
+  font-size: 1em;
+  color: #0D5A78;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.subscribe-button{
+  grid-column: 3/span 1;
+  grid-row: 2;
+  cursor:pointer;
+  align-self: center;
+}
+
+
+
+.contact-message{
+  font-family: Yantramanav;
+  font-size: 1em;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 1em;
+  padding-top: 10px;
+  padding-bottom:10px;
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+@media screen and (min-width: 568px){
+  .logo{
+    width:20%;
+  }
+
+  .emailsubmission{
+    display:grid;
+    grid-gap: 0px;
+    grid-template-columns: auto 80px 50px;
+    /* grid-template-rows: repeat(2, 1fr); */
+  }
+
+  .submission-box{
+    grid-column: 1/span 1;
+    grid-row: 1;
+    margin-bottom:5px;
+  }
+
+  .subscribe-button-text{
+    grid-column: 2/span 1;
+    grid-row: 1;
+    font-family: Yantramanav;
+    font-size: 1em;
+    color: #0D5A78;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .subscribe-button{
+    grid-column: 3/span 1;
+    grid-row: 1;
+    cursor:pointer;
+    align-self: center;
+  }
+
+}
+
+
+@media screen and (min-width: 991px){
+  h1{
+    font-family: Yantramanav;
+    font-size: 3em;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 1.15em;
+    text-transform:capitalize;
+    padding-top: 10px;
+    padding-bottom:10px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  h2{
+    font-family: Yantramanav;
+    font-size: 2em;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom:10px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  h3{
+    font-family: Yantramanav;
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom:10px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  textarea {
+    resize: none;
+    /* width:300px; */
+    background: #F0F3F2;
+    border: 1px solid #CDCDCD;
+    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.50);
+    border-radius: 3px;
+    font-family: Yantramanav;
+    font-size: 2em;
+    height: 1.5em;
+    color: #0D5A78;
+    align-self: center;
+  }
+
+  .logo{
+    width:25%;
+  }
+
+  .subscription{
+      grid-column: 2/span 2;
+  }
+
+  .emailsubmission{
+    display:grid;
+    grid-gap: 0px;
+    grid-template-columns: auto 80px 50px;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .submission-box{
+    grid-column: 1/span 3;
+    grid-row: 1;
+    margin-bottom:5px;
+  }
+
+  .subscribe-button-text{
+    grid-column: 2/span 1;
+    grid-row: 2;
+    font-family: Yantramanav;
+    font-size: 1em;
+    color: #0D5A78;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .subscribe-button{
+    grid-column: 3/span 1;
+    grid-row: 2;
+    cursor:pointer;
+    align-self: center;
+  }
+
+}
